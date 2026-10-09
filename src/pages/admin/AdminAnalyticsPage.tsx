@@ -225,12 +225,6 @@ export default function AdminAnalyticsPage() {
   const underReviewCount = demoReports.filter(
     (report) => report.status === "Under Review",
   ).length;
-  const inProgressCount = demoReports.filter(
-    (report) => report.status === "In Progress",
-  ).length;
-  const rejectedCount = demoReports.filter(
-    (report) => report.status === "Rejected",
-  ).length;
   const awaitingReviewCount = submittedCount + underReviewCount;
   const highPriorityCount = demoReports.filter(
     (report) => report.priority === "High",
